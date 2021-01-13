@@ -79,10 +79,7 @@ spiral <- function(x, n = 5, r = 25, m = -1,
   ggplot2::ggplot(df)+
     ggplot2::geom_line(ggplot2::aes(x_chunks, y_chunks, group = g), col=line_col, size=line_width, ...)+
     ggplot2::expand_limits(y=0)+
-    ggplot2::scale_y_continuous(expand = ggplot2::expansion(0, 0))+
-    ggplot2::scale_x_continuous(expand = ggplot2::expansion(0, 0))+
     ggplot2::coord_polar()+
-    ggplot2::labs(x="x", y="y")+
     ggplot2::theme_void()+
     ggplot2::theme(panel.background = ggplot2::element_rect(fill = bg_fill, color=NA))
 
